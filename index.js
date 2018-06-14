@@ -3,8 +3,11 @@ function takeANumber (line, name) {
   return `Welcome, ${name}. You are number ${line.length} in line.`
 }
 
+i = 0;
+
 function nowServing(line) {
-  return !line.length ?'There is nobody waiting to be served!' : `Currently serving ${line.shift()}.`
+  i++;
+  return i;
 }
 
  function currentLine(line) {
